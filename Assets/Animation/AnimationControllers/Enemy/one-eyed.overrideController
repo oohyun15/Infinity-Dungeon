@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: one-eyed
+  m_Controller: {fileID: 9100000, guid: c30056c41659c3143858057fd2854550, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6ff80e9403ef1a1498dbf2126d2281e3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ff60db3002abb0740a30a396d7c0011a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6c4e728751fd01648a66d43fc69fb3c1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7de4d8aa9ded55d409ffad21347b121c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 448fa4ea41d437a46a3454eab2e13149, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e56ce82022b744145ad4d2c6d3b9fdfc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 20809ba4c1b6ca54f87bd7ab0e8c03b1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b542a30383c697c48a25619e5de92552, type: 2}

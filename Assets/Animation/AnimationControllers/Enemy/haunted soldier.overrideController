@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: haunted soldier
+  m_Controller: {fileID: 9100000, guid: c30056c41659c3143858057fd2854550, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6ff80e9403ef1a1498dbf2126d2281e3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 93132955721112b4db167c944e5af781, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6c4e728751fd01648a66d43fc69fb3c1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9c4e1737475ab85469f061d3f6ad7889, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 448fa4ea41d437a46a3454eab2e13149, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a5fd62e6a54209e4a89053bcaef6041a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 20809ba4c1b6ca54f87bd7ab0e8c03b1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2a0530a1ad91ff840bb49c6a346ebb3f, type: 2}

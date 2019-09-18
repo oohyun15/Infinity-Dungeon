@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Intro/Title.unity
+    guid: d871083c5ce05894597cad0072c25dec
+  - enabled: 1
+    path: Assets/Scenes/Intro/Map.unity
+    guid: c5d26f78f9b059042baed9212926403c
+  - enabled: 1
+    path: Assets/Scenes/Map/1. Copy.unity
+    guid: f7169c81e3b145f4ca89daf72f256279
+  - enabled: 1
+    path: Assets/Scenes/Map/1. Copy_Boss.unity
+    guid: 07354e3133d3bcf458f881e4771ea788
+  - enabled: 1
+    path: Assets/Scenes/Map/2. AbandonedArea.unity
+    guid: fbf599c4935121c43ac844fbdf15e61c
+  - enabled: 1
+    path: Assets/Scenes/Map/2. AbandonedArea_Boss.unity
+    guid: 8791787c9e1d00c4996fa3f0e88edf9d
+  - enabled: 1
+    path: Assets/Scenes/Map/3. Biology.unity
+    guid: ec0773cd87a0a85408933b25e708d087
+  - enabled: 1
+    path: Assets/Scenes/Map/3. Biology_Boss.unity
+    guid: efce95543bcb5324c9c3be4c12552709
+  - enabled: 1
+    path: Assets/Scenes/Map/4. Spritism.unity
+    guid: 3fa5017da36f6ea48bd21811bdae6871
+  - enabled: 1
+    path: Assets/Scenes/Map/4. Spritism_Boss.unity
+    guid: 3463c5902c3256f4eafbf353a8671607
+  - enabled: 1
+    path: Assets/Scenes/Map/5. Final.unity
+    guid: 4eac8f022b9a8024f9eca9ce6467de54
+  m_configObjects: {}

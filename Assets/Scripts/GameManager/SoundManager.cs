@@ -1,0 +1,60 @@
+﻿using UnityEngine;
+
+
+
+
+/*******************************************
+*                                          * 
+*             18.07.20 수정                *
+*           Class SounManager              * 
+*    게임 내 사운드를 관리하는 클래스      *
+*                                          *
+*******************************************/
+
+
+public class SoundManager : MonoBehaviour
+{
+    //public variable
+    public static SoundManager instance = null;
+    [HideInInspector] public int[] SkillNum;
+    [HideInInspector] public int Depth;
+    [HideInInspector] public int SkillLeft;
+    [HideInInspector] public int Score;
+    [HideInInspector] public Vector3 CamPos;   // Map 씬에서 카메라 위치 저장
+
+    public AudioSource[] BGM;
+
+    [HideInInspector] public int NowPlaying;        // 0: Title, 1: Copy, 2: Abandoned 3: Biology, 4: Spritism, 5: Final
+
+
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+
+            main();
+        }
+
+        else if (instance != this)
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void main()
+    {
+
+        // 0.5초 딜레이
+        BGM[0].PlayDelayed(0.5f);
+
+        NowPlaying = 0;
+
+        SkillNum = new int[6];
+
+        Depth = 0;
+
+      //  Debug.Log(NowPlaying);
+    }
+}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: chogal
+  m_Controller: {fileID: 9100000, guid: c30056c41659c3143858057fd2854550, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6ff80e9403ef1a1498dbf2126d2281e3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c26bfc8ad27b6464fb1f083e2377cb29, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6c4e728751fd01648a66d43fc69fb3c1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f27ec60fb2d61e4408e4fe59c4566584, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 20809ba4c1b6ca54f87bd7ab0e8c03b1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 47501f2ced9d324439cdf232262f2019, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 448fa4ea41d437a46a3454eab2e13149, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 38117471b69be764d962eccc2be07663, type: 2}

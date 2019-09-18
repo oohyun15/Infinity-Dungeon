@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Agent
+  - Priest
+  - Scientist
+  - Shield
+  - Tile
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1034508175
+    locked: 0
+  - name: Enemy
+    uniqueID: 858833039
+    locked: 0
+  - name: Player
+    uniqueID: 1808750003
+    locked: 0
+  - name: Effect
+    uniqueID: 1268738743
+    locked: 0
+  - name: Skill
+    uniqueID: 4139061709
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

@@ -139,6 +139,9 @@ public class SkillBlock : MonoBehaviour
 
             // 찌꺼기 리스트 제거 메모리 차지하기 때문
             ChainBlock.Clear();
+
+            // 스킬 사운드
+            SoundManager.instance.Touch.Play();
         }
 
         GameManager.instance.SkillLeftUpdate();

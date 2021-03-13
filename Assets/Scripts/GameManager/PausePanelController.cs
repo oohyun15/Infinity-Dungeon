@@ -28,6 +28,8 @@ public class PausePanelController : MonoBehaviour
     public void OnMenuButtonClicked()
     {
         if (GameManager.instance.gameState != GameManager.GameState.GamePlay) return;
+        
+        SoundManager.instance.Touch.Play();
 
         if (!isActive)
         {
@@ -46,6 +48,8 @@ public class PausePanelController : MonoBehaviour
     public void OnHomeButtonClicked()
     {
         if (GameManager.instance.gameState != GameManager.GameState.GamePlay) return;
+
+        SoundManager.instance.Touch.Play();
 
         Time.timeScale = 1.0f;
 
@@ -70,6 +74,8 @@ public class PausePanelController : MonoBehaviour
     {
         if (GameManager.instance.gameState != GameManager.GameState.GamePlay) return;
 
+        SoundManager.instance.Touch.Play();
+
         GameInfoPanel.SetActive(true);
 
         PausePanel.SetActive(false);
@@ -78,6 +84,8 @@ public class PausePanelController : MonoBehaviour
     public void OnCancelButtonClicked()
     {
         if (GameManager.instance.gameState != GameManager.GameState.GamePlay) return;
+
+        SoundManager.instance.Touch.Play();
 
         isActive = false;
 

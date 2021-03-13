@@ -12,5 +12,8 @@
 
 | [<img src="https://avatars2.githubusercontent.com/u/52606560?s=400&u=2a492fa6991fe8fe79db9e5bc6442131ab4d5259&v=4" width="200">](https://github.com/oohyun15) <br> oohyun15 |
 | :-----------------------------------: |
+
+## Info
+아주대학교 미디어학과 인디게임제작팀 TenbucksSushi Studio에서 제작한 캐주얼 모바일 게임 Infinity_Dungeon의 Unity 파일입니다.
   
 Updated: 2021.03.13

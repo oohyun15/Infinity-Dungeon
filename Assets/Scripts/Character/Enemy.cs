@@ -73,6 +73,8 @@ public class Enemy : Character
                 // HpHUD.transform.position = Camera.main.WorldToScreenPoint(transform.localPosition + Vector3.up * transform.localScale.y * 0.4f);
 
                 HpHUD.transform.position = Camera.main.WorldToScreenPoint(transform.localPosition + Vector3.up * Height);
+
+                Debug.Log(HpHUD.transform.position);
             }
             yield return null;
         }

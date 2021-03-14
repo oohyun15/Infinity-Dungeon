@@ -29,13 +29,16 @@ public class Lv1_Skill_Agent : Skill
         {
             count++;
             Bullet bullet = Instantiate(_Bullet,
-    GameManager.instance.playerList[0].transform.position,
-    Quaternion.identity);
+                                        GameManager.instance.playerList[0].transform.position,
+                                        Quaternion.identity);
 
             bullet.Damage = damage;
             bullet.ChainNum = chainNum;
             bullet.speed = speed;
             bullet.transform.parent = GameManager.instance.EffectHolder.transform;
+            
+            SoundManager.instance.GunFire.Play();
+
             yield return new WaitForSeconds(0.1f);
         }
     }

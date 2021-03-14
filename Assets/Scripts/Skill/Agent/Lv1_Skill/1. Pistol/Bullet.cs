@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
     [HideInInspector] public int Damage;
     [HideInInspector] public float speed;
     [HideInInspector] public int ChainNum;

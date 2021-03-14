@@ -79,6 +79,8 @@ public class SentryGun : MonoBehaviour
 
             effect.Play();
 
+            SoundManager.instance.GunFire.Play();
+
             yield return new WaitForSeconds(ShootSpeed); // 총알 생성 후 0.3초 대기
         }
     }

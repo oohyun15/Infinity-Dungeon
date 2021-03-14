@@ -23,7 +23,12 @@ public class SoundManager : MonoBehaviour
     [Header("Default SFX")]
     public AudioSource Touch;
     public AudioSource Hit;
-    
+
+    [Space]
+
+    [Header("Skill Sound")]
+    public AudioSource GunFire;
+
     [Space]
 
     [Header("Public Variable")]

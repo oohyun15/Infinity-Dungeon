@@ -29,6 +29,7 @@ public class SoundManager : MonoBehaviour
     [Header("Skill Sound")]
     public AudioSource GunFire;
     public AudioSource Fireball;
+    public AudioSource GlassBroken;
 
     [Space]
 

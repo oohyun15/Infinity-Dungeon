@@ -34,14 +34,16 @@ public class Poison : MonoBehaviour
             int num = (int)Mathf.Pow(2.0f, ChainNum + 1);
 
             Addict broken = Instantiate(Broken,
-                new Vector3(positionX, 1.13f, 0f),
-                Quaternion.identity);
+                                        new Vector3(positionX, 1.13f, 0f),
+                                        Quaternion.identity);
 
             broken.transform.parent = GameManager.instance.EffectHolder.transform;
 
             broken.Damage = Damage;
 
             broken.num = num;
+
+            SoundManager.instance.GlassBroken.Play();
 
             // 연기 사라지는거 수동으로 시간 맞춰놓음
             Destroy(broken.gameObject, 4f);

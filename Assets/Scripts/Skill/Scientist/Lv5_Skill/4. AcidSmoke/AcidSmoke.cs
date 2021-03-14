@@ -35,8 +35,8 @@ public class AcidSmoke : MonoBehaviour {
             int num = 3 * (int)Mathf.Pow(2.0f, ChainNum - 1);
 
             Blinding broken = Instantiate(Broken,
-                new Vector3(positionX, 1.13f, 0f),
-                Quaternion.identity);
+                                          new Vector3(positionX, 1.13f, 0f),
+                                          Quaternion.identity);
 
             broken.transform.parent = GameManager.instance.EffectHolder.transform;
 
@@ -45,6 +45,8 @@ public class AcidSmoke : MonoBehaviour {
             broken.num = num;
 
             broken.LoseRate = LoseRate;
+
+            SoundManager.instance.GlassBroken.Play();
 
             // 연기 사라지는거 수동으로 시간 맞춰놓음
             Destroy(broken.gameObject, 4.4f);

@@ -14,6 +14,8 @@ public class SentryGun : MonoBehaviour
     public GameObject EffectPrefab;
     private ParticleSystem effect;
 
+    private static int angleCount = 0;
+
     // Use this for initialization
 
     private void Awake()
@@ -60,8 +62,12 @@ public class SentryGun : MonoBehaviour
 
         while (true) // 오브젝트가 존재하는 한 계속 while문 실행
         {
+            float _angle = -(10 + (Mathf.Abs(angleCount-5) * 4)); // -30 ~ -10 왔다갔다 함
+
             SentryGunBullet _STbullet = Instantiate(STbullet,
-        _position, Quaternion.Euler(0, 0, -30f));
+                                                    _position, Quaternion.Euler(0, 0, _angle));
+
+            if (++angleCount % 11 == 0) angleCount = 0;
 
             _STbullet.transform.parent = GameManager.instance.EffectHolder.transform;
 

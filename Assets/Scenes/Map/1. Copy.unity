@@ -300,6 +300,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8244837726242239528, guid: 9f2510700e8314812a0b4d740cd7a19b,
+        type: 3}
+      propertyPath: SkillNum.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8244837726242239529, guid: 9f2510700e8314812a0b4d740cd7a19b,
         type: 3}
       propertyPath: m_Name

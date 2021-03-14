@@ -41,6 +41,11 @@ public abstract class Character : MonoBehaviour
     public Character target;
     public bool IsHit;
 
+    [Space]
+
+    [Header("Ingame Sound")]
+    public AudioSource HitSound;
+
    [HideInInspector] public Animator animator;
    [HideInInspector] public SpriteRenderer spr;
 
@@ -58,6 +63,8 @@ public abstract class Character : MonoBehaviour
 
     public void TriggerUpdate(Character Char, string name)
     {
+        if (Char is Enemy && name == "Hit") Char.HitSound.Play();
+
         Char.animator.SetTrigger(name);
     }
 
@@ -78,6 +85,8 @@ public abstract class Character : MonoBehaviour
         BoolUpdate(target, "Alive", false);
 
         EnemySpawner.EnemyArray.Remove(target);
+
+        target.HitSound.Play();
 
         target.StopAllCoroutines();
 

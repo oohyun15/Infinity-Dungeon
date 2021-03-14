@@ -18,11 +18,6 @@ public class Enemy : Character
     public int targetIndex;
     public bool IsKnock = false;
 
-    [Space]
-
-    [Header("Enemy Ingame Sound")]
-    public AudioSource HitSound;
-
     [HideInInspector] public float Height; // 에너미 스프라이트 이미지의 사이즈가 제각각이라 높이를 따로 구해서 체력바를 구해야해서 쓰는 변수
     [HideInInspector] public float EndTime = 0; // 현재 ElectronicShield 구현 시 중복 방지를 위한 코드. 후에 다른 방식으로 수정이 필요함.
     [HideInInspector] public float EndTime2 = 0; // 애는 Ghost 구현에 쓸 코드
@@ -73,8 +68,6 @@ public class Enemy : Character
                 // HpHUD.transform.position = Camera.main.WorldToScreenPoint(transform.localPosition + Vector3.up * transform.localScale.y * 0.4f);
 
                 HpHUD.transform.position = Camera.main.WorldToScreenPoint(transform.localPosition + Vector3.up * Height);
-
-                Debug.Log(HpHUD.transform.position);
             }
             yield return null;
         }
@@ -99,9 +92,7 @@ public class Enemy : Character
             TriggerUpdate(this, "Hit");
 
             if (!IsKnock)
-                StartCoroutine(KnockBack(this, KnockBackRange));
-    
-            HitSound.Play();
+                StartCoroutine(KnockBack(this, KnockBackRange));    
         }
     }
     protected override IEnumerator Attack()

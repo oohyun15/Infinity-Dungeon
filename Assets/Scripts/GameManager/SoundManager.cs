@@ -23,7 +23,12 @@ public class SoundManager : MonoBehaviour
     [HideInInspector] public Vector3 CamPos;   // Map 씬에서 카메라 위치 저장
 
     public AudioSource[] BGM;
+
+    [Space]
+
+    [Header("Default SFX")]
     public AudioSource Touch;
+    public AudioSource Hit;
 
     [HideInInspector] public int NowPlaying;        // 0: Title, 1: Copy, 2: Abandoned 3: Biology, 4: Spritism, 5: Final
 

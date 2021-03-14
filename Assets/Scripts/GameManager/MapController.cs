@@ -98,6 +98,8 @@ public class MapController : MonoBehaviour
         else Button[1].SetActive(false);
 
         InfoButtonActive = !InfoButtonActive;
+
+        SoundManager.instance.Touch.Play();
     }
 
 }

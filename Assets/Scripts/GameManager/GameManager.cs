@@ -141,8 +141,11 @@ public class GameManager : MonoBehaviour
             // 스테이지 클리어
             case GameState.GameClear:
 
+                // 디버깅 용
+                if (!MapGenerator.instance) NextLevel();
+
                 // 마지막 스테이지 클리어 시
-                if (StageLevel == MapGenerator.instance.height) GameClear();
+                else if (StageLevel == MapGenerator.instance.height) GameClear();
 
                 // 다음 레벨 호출
                 else NextLevel();
@@ -167,7 +170,7 @@ public class GameManager : MonoBehaviour
         StageLevel = SoundManager.instance.Depth;
 
         // 블록 개수 제한을 두기 위한 개수 초기화
-        if (StageLevel == 0 && StageLevel == 1) SkillLeftCount = InitSkillCount;
+        if (StageLevel == 0 || StageLevel == 1) SkillLeftCount = InitSkillCount;
 
         else SkillLeftCount = SoundManager.instance.SkillLeft;
 
@@ -456,7 +459,7 @@ public class GameManager : MonoBehaviour
     //
     public void ReturnToMap()
     {
-        MapGenerator.instance.gameObject.SetActive(true);
+        if (MapGenerator.instance) MapGenerator.instance.gameObject.SetActive(true);
         SceneManager.LoadScene("Map");
     }
 }

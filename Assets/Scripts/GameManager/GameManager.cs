@@ -167,7 +167,7 @@ public class GameManager : MonoBehaviour
         StageLevel = SoundManager.instance.Depth;
 
         // 블록 개수 제한을 두기 위한 개수 초기화
-        if (StageLevel.Equals(1)) SkillLeftCount = InitSkillCount;
+        if (StageLevel == 0 && StageLevel == 1) SkillLeftCount = InitSkillCount;
 
         else SkillLeftCount = SoundManager.instance.SkillLeft;
 
@@ -259,7 +259,7 @@ public class GameManager : MonoBehaviour
         // MapGenerator.instance.IsGenerate = false;
 
         //
-        Destroy(MapGenerator.instance.gameObject);
+        if (MapGenerator.instance) Destroy(MapGenerator.instance.gameObject);
 
         // GameStartDelay 이후 InitGame 호출
         Invoke("ReturnToTitle", GameStartDelay);

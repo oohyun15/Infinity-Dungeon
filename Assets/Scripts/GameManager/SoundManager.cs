@@ -14,24 +14,25 @@
 
 public class SoundManager : MonoBehaviour
 {
-    //public variable
     public static SoundManager instance = null;
-    [HideInInspector] public int[] SkillNum;
-    [HideInInspector] public int Depth;
-    [HideInInspector] public int SkillLeft;
-    [HideInInspector] public int Score;
-    [HideInInspector] public Vector3 CamPos;   // Map 씬에서 카메라 위치 저장
-
     public AudioSource[] BGM;
+    public int NowPlaying;        // 0: Title, 1: Copy, 2: Abandoned 3: Biology, 4: Spritism, 5: Final
 
     [Space]
 
     [Header("Default SFX")]
     public AudioSource Touch;
     public AudioSource Hit;
+    
+    [Space]
 
-    [HideInInspector] public int NowPlaying;        // 0: Title, 1: Copy, 2: Abandoned 3: Biology, 4: Spritism, 5: Final
-
+    [Header("Public Variable")]
+    
+    public int[] SkillNum;
+    public int Depth;
+    public int SkillLeft;
+    [HideInInspector] public int Score;
+    [HideInInspector] public Vector3 CamPos;   // Map 씬에서 카메라 위치 저장
 
 
     private void Awake()

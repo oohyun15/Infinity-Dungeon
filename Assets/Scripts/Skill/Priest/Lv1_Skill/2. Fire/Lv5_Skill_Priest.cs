@@ -18,8 +18,8 @@ public class Lv5_Skill_Priest : Skill
     public override void Activation(int chainNum)
     {
         Fire fire = Instantiate(_Fire,
-            GameManager.instance.playerList[2].transform.position, // 사제 위치
-            Quaternion.identity);
+                                GameManager.instance.playerList[2].transform.position, // 사제 위치
+                                Quaternion.identity);
 
     //    fire.transform.parent = GameManager.instance.playerList[2].transform;
 
@@ -28,6 +28,6 @@ public class Lv5_Skill_Priest : Skill
         fire.speed = speed;
         fire.transform.parent = GameManager.instance.EffectHolder.transform;
 
-
+        SoundManager.instance.Fireball.Play();
     }
 }

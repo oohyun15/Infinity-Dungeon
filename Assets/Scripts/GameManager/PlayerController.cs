@@ -28,13 +28,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public IEnumerator SpawnPlayer()
+    public IEnumerator MovePlayer(float position)
     {
         for (int i = 0; i < GameManager.instance.playerList.Length; i++)
         {
             Player player = GameManager.instance.playerList[i];
 
-            player.PlayerMove();
+            player.PlayerMove(position);
 
             yield return null;
         }

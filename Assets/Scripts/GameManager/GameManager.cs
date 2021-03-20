@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour
     [Header("Player")]
     public Player[] playerList;
     public int playerTargetIndex = 0;
+    private float playerSpawnPosition = 5.0f;
+    private float playerFinishPosition = 20.0f;
 
     [Space]
 
@@ -205,7 +207,7 @@ public class GameManager : MonoBehaviour
         GameImage.SetActive(true);
 
         // GameReady 상태에서 플레이어들은 움직이게 하기 위해서
-        StartCoroutine(playerController.SpawnPlayer());
+        StartCoroutine(playerController.MovePlayer(playerSpawnPosition));
 
         // GameStartDelay 이후 GamePlay 호출
         Invoke("GamePlay", GameStartDelay);
@@ -276,6 +278,8 @@ public class GameManager : MonoBehaviour
     // 다음 레벨로 넘어가는 함수
     private void NextLevel()
     {
+        SoundManager.instance.StartCoroutine(playerController.MovePlayer(playerFinishPosition));
+
         // 남은 블록 개수에 더해줄 블록 개수
         AddCount = Random.Range(1, 11) + 5 * StageLevel;
 
@@ -317,6 +321,8 @@ public class GameManager : MonoBehaviour
 
     private void GameClear()
     {
+        SoundManager.instance.StartCoroutine(playerController.MovePlayer(playerFinishPosition));
+
         // 게임 텍스트 업데이트
         GameText.text = "ALL STAGE CLEAR!";
 

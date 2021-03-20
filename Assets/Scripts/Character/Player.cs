@@ -34,13 +34,13 @@ public class Player : Character
         DefensiveRatio = InitDefensiveRatio;
     }
 
-    public void PlayerMove()
+    public void PlayerMove(float position)
     {
         StopAllCoroutines();
 
         BoolUpdate(this, "PlayerAlive", true);
 
-        playerPosition = InitPlayerPosition + 5.0f * Vector3.right;
+        playerPosition = InitPlayerPosition + position * Vector3.right;
 
         target = null;
 

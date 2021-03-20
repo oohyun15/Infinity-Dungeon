@@ -32,6 +32,8 @@ public class Lv1_Skill_Scientist : Skill
 
             if (player.Hp > 0) GameManager.instance.StartCoroutine(AttackDamage(player, time, EndTime));
         }
+
+        SoundManager.instance.PowerBuff.Play();
     }
 
     IEnumerator AttackDamage(Player player, float time, float endTime)

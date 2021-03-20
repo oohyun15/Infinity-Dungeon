@@ -39,6 +39,8 @@ public class Lv1_Skill_Priest : Skill
                 player.HpBarUpdate();
             }
         }
+
+        SoundManager.instance.Heal.Play();
     }
 
     IEnumerator HealHUD(Character target, float time, float endTime)

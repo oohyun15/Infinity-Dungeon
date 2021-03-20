@@ -30,6 +30,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource GunFire;
     public AudioSource Fireball;
     public AudioSource GlassBroken;
+    public AudioSource PowerBuff;
+    public AudioSource Heal;
 
     [Space]
 

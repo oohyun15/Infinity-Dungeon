@@ -213,6 +213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1008615658370084, guid: cfa3000f87140af478296f97b5327b85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1552824127246334, guid: cfa3000f87140af478296f97b5327b85, type: 3}
       propertyPath: m_Name
       value: 1. Copy
@@ -290,6 +294,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 530975133318302719, guid: cfa3000f87140af478296f97b5327b85,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -380
+      objectReference: {fileID: 0}
+    - target: {fileID: 854820160512386308, guid: cfa3000f87140af478296f97b5327b85,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -380
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280730313923091202, guid: cfa3000f87140af478296f97b5327b85,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072201678928324218, guid: cfa3000f87140af478296f97b5327b85,
+        type: 3}
+      propertyPath: m_Name
+      value: Player Icon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa3000f87140af478296f97b5327b85, type: 3}

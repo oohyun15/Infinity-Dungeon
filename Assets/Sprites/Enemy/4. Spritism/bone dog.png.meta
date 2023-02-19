@@ -6,7 +6,7 @@ TextureImporter:
       213: 21300000
     second: bone dog_0
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -27,6 +27,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -35,9 +36,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -65,6 +66,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -114,6 +116,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -133,145 +147,257 @@ TextureImporter:
       tessellationDetail: 0
       bones:
       - name: root
+        guid: 
         position: {x: 42.405838, y: 31.583294, z: 0}
         rotation: {x: 0, y: 0, z: -0.9896459, w: 0.14353035}
         length: 7.9359584
         parentId: -1
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_1
+        guid: 
         position: {x: 7.9359584, y: -0.0000019719882, z: 0}
         rotation: {x: 0, y: 0, z: -0.2073633, w: 0.97826403}
         length: 8.7155075
         parentId: 0
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_15
+        guid: 
         position: {x: -3.816197, y: 2.9922478, z: 0}
         rotation: {x: 0, y: 0, z: 0.78440404, w: 0.62025017}
         length: 7.363809
         parentId: 0
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_16
+        guid: 
         position: {x: 0.473689, y: 3.5826907, z: 0}
         rotation: {x: 0, y: 0, z: 0.41510344, w: 0.90977424}
         length: 7.945406
         parentId: 0
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_24
+        guid: 
         position: {x: -7.218753, y: 3.4125633, z: 0}
         rotation: {x: 0, y: 0, z: -0.99226886, w: 0.12410681}
         length: 4.591445
         parentId: 0
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_2
+        guid: 
         position: {x: 8.715506, y: -0.0000071342674, z: 0}
         rotation: {x: 0, y: 0, z: -0.10052666, w: 0.9949344}
         length: 9.535986
         parentId: 1
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_20
+        guid: 
         position: {x: 7.3638105, y: 0.0000005857635, z: 0}
         rotation: {x: 0, y: 0, z: -0.24591343, w: 0.9692918}
         length: 7.893034
         parentId: 2
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_17
+        guid: 
         position: {x: 7.9454, y: 0.0000039882434, z: 0}
         rotation: {x: 0, y: 0, z: 0.4260032, w: 0.9047217}
         length: 12.435712
         parentId: 3
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_25
+        guid: 
         position: {x: 4.591434, y: -0.0000029203604, z: 0}
         rotation: {x: 0, y: 0, z: 0.38120338, w: 0.9244912}
         length: 3.3947942
         parentId: 4
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_3
+        guid: 
         position: {x: 9.535989, y: -0.00000019688707, z: 0}
         rotation: {x: 0, y: 0, z: -0.1440737, w: 0.989567}
         length: 8.080853
         parentId: 5
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_21
+        guid: 
         position: {x: 7.893034, y: 0.0000057747425, z: 0}
         rotation: {x: 0, y: 0, z: 0.33833134, w: 0.94102705}
         length: 5.5938525
         parentId: 6
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_18
+        guid: 
         position: {x: 12.435712, y: 0.00000018928449, z: 0}
         rotation: {x: 0, y: 0, z: -0.18413027, w: 0.9829019}
         length: 4.524658
         parentId: 7
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_26
+        guid: 
         position: {x: 3.3948016, y: 0.00000038735197, z: 0}
         rotation: {x: 0, y: 0, z: 0.32534465, w: 0.9455955}
         length: 3.996511
         parentId: 8
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_4
+        guid: 
         position: {x: 8.080853, y: 0.0000027290698, z: 0}
         rotation: {x: 0, y: 0, z: -0.14768945, w: 0.98903376}
         length: 3.5510564
         parentId: 9
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_7
+        guid: 
         position: {x: -3.0248647, y: 4.88128, z: 0}
         rotation: {x: 0, y: 0, z: 0.977215, w: 0.21225193}
         length: 6.396761
         parentId: 9
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_8
+        guid: 
         position: {x: -2.500701, y: 7.218176, z: 0}
         rotation: {x: 0, y: 0, z: 0.85091525, w: 0.52530295}
         length: 4.8494253
         parentId: 9
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_22
+        guid: 
         position: {x: 5.593843, y: -0.000000105169136, z: 0}
         rotation: {x: 0, y: 0, z: -0.3441792, w: 0.938904}
         length: 8.267084
         parentId: 10
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_19
+        guid: 
         position: {x: 4.5246563, y: -0.0000011494711, z: 0}
         rotation: {x: 0, y: 0, z: -0.27658883, w: 0.96098834}
         length: 3.0670462
         parentId: 11
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_27
+        guid: 
         position: {x: 3.9965134, y: 0.00000926141, z: 0}
         rotation: {x: 0, y: 0, z: 0.15327762, w: 0.98818314}
         length: 4.992869
         parentId: 12
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_5
+        guid: 
         position: {x: 2.6440308, y: -2.263833, z: 0}
         rotation: {x: 0, y: 0, z: 0.3185254, w: 0.9479143}
         length: 7.794028
         parentId: 13
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_6
+        guid: 
         position: {x: 1.592883, y: 3.1584258, z: 0}
         rotation: {x: 0, y: 0, z: 0.6950439, w: 0.71896726}
         length: 3.2323444
         parentId: 13
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_9
+        guid: 
         position: {x: 6.3967605, y: 0.0000013384031, z: 0}
         rotation: {x: 0, y: 0, z: -0.029567234, w: 0.9995628}
         length: 8.192023
         parentId: 14
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_12
+        guid: 
         position: {x: 4.8494234, y: -0.00000027136775, z: 0}
         rotation: {x: 0, y: 0, z: -0.036442842, w: 0.99933577}
         length: 4.147125
         parentId: 15
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_23
+        guid: 
         position: {x: 8.267082, y: -0.0000071894888, z: 0}
         rotation: {x: 0, y: 0, z: -0.42696178, w: 0.9042697}
         length: 2.33337
         parentId: 16
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_10
+        guid: 
         position: {x: 8.192026, y: 0.0000041203334, z: 0}
         rotation: {x: 0, y: 0, z: -0.22975196, w: 0.9732492}
         length: 7.0453453
         parentId: 21
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_13
+        guid: 
         position: {x: 4.147125, y: 0.0000003841955, z: 0}
         rotation: {x: 0, y: 0, z: 0.21228936, w: 0.9772068}
         length: 9.487748
         parentId: 22
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_11
+        guid: 
         position: {x: 7.045345, y: -0.0000012308888, z: 0}
         rotation: {x: 0, y: 0, z: -0.1452136, w: 0.9894003}
         length: 5.8844533
         parentId: 24
+        color:
+          serializedVersion: 2
+          rgba: 0
       - name: bone_14
+        guid: 
         position: {x: 9.487747, y: -0.00000020856021, z: 0}
         rotation: {x: 0, y: 0, z: -0.29154193, w: 0.95655805}
         length: 5.896433
         parentId: 25
+        color:
+          serializedVersion: 2
+          rgba: 0
       spriteID: 2d8885085f2086a4e9edb657c7e59824
       internalID: 21300000
       vertices:
@@ -2687,150 +2813,266 @@ TextureImporter:
     physicsShape: []
     bones:
     - name: root
+      guid: 
       position: {x: 52.628677, y: 33.70097, z: 0}
       rotation: {x: 0, y: 0, z: 0.99131966, w: 0.13147359}
       length: 5.231971
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_33
+      guid: 
       position: {x: 5.231971, y: 0.0000026350287, z: 0}
       rotation: {x: 0, y: 0, z: 0.3383554, w: 0.9410184}
       length: 5.4929338
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_43
+      guid: 
       position: {x: 3.4788823, y: 3.973843, z: 0}
       rotation: {x: 0, y: 0, z: 0.6615318, w: 0.7499171}
       length: 9.061053
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_44
+      guid: 
       position: {x: -2.5333247, y: 3.7631829, z: 0}
       rotation: {x: 0, y: 0, z: 0.78302187, w: 0.6219942}
       length: 8.541731
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_45
+      guid: 
       position: {x: -3.0590138, y: -0.87824786, z: 0}
       rotation: {x: 0, y: 0, z: -0.8924818, w: 0.45108342}
       length: 6.3265853
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_34
+      guid: 
       position: {x: 5.4929323, y: 0.0000008430429, z: 0}
       rotation: {x: 0, y: 0, z: -0.17543113, w: 0.9844917}
       length: 8.205196
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_53
+      guid: 
       position: {x: 9.06105, y: 0.00000008697418, z: 0}
       rotation: {x: 0, y: 0, z: 0.45161006, w: 0.89221543}
       length: 12.015345
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_56
+      guid: 
       position: {x: 8.541729, y: 0.0000074576355, z: 0}
       rotation: {x: 0, y: 0, z: 0.35946146, w: 0.93315995}
       length: 8.78266
       parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_59
+      guid: 
       position: {x: 6.3265953, y: 0.0000028131465, z: 0}
       rotation: {x: 0, y: 0, z: 0.555051, w: 0.8318163}
       length: 4.044978
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_35
+      guid: 
       position: {x: 8.205198, y: 0.00000033574008, z: 0}
       rotation: {x: 0, y: 0, z: -0.27515224, w: 0.9614007}
       length: 10.212337
       parentId: 5
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_54
+      guid: 
       position: {x: 12.015347, y: -0.000001616933, z: 0}
       rotation: {x: 0, y: 0, z: -0.3157107, w: 0.9488555}
       length: 5.377935
       parentId: 6
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_57
+      guid: 
       position: {x: 8.7826605, y: 0.000006370439, z: 0}
       rotation: {x: 0, y: 0, z: -0.34003434, w: 0.940413}
       length: 8.435484
       parentId: 7
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_60
+      guid: 
       position: {x: 4.04498, y: -0.0000005506224, z: 0}
       rotation: {x: 0, y: 0, z: 0.22506033, w: 0.97434485}
       length: 7.4037824
       parentId: 8
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_36
+      guid: 
       position: {x: 10.212336, y: 0.0000010286144, z: 0}
       rotation: {x: 0, y: 0, z: 0.38759774, w: 0.9218286}
       length: 3.4503076
       parentId: 9
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_55
+      guid: 
       position: {x: 5.377932, y: -0.00000002762637, z: 0}
       rotation: {x: 0, y: 0, z: -0.34678692, w: 0.93794394}
       length: 2.107585
       parentId: 10
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_58
+      guid: 
       position: {x: 8.435483, y: -0.0000029625737, z: 0}
       rotation: {x: 0, y: 0, z: -0.40799904, w: 0.91298234}
       length: 2.1813502
       parentId: 11
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_37
+      guid: 
       position: {x: 3.4503138, y: -0.00000039134602, z: 0}
       rotation: {x: 0, y: 0, z: -0.49723068, w: 0.8676184}
       length: 7.5127363
       parentId: 13
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_38
+      guid: 
       position: {x: 7.546364, y: -0.03770466, z: 0}
       rotation: {x: 0, y: 0, z: 0.073710255, w: 0.9972797}
       length: 1.9333208
       parentId: 16
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_41
+      guid: 
       position: {x: -3.036054, y: 6.9707193, z: 0}
       rotation: {x: 0, y: 0, z: 0.880189, w: 0.4746233}
       length: 7.607729
       parentId: 16
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_42
+      guid: 
       position: {x: -6.223923, y: 4.398219, z: 0}
       rotation: {x: 0, y: 0, z: 0.9740725, w: 0.22623609}
       length: 8.451193
       parentId: 16
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_39
+      guid: 
       position: {x: 3.122343, y: -2.1800838, z: 0}
       rotation: {x: 0, y: 0, z: 0.13218519, w: 0.99122506}
       length: 7.8109303
       parentId: 17
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_40
+      guid: 
       position: {x: 3.252967, y: 2.3160465, z: 0}
       rotation: {x: 0, y: 0, z: 0.604217, w: 0.7968198}
       length: 4.68991
       parentId: 17
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_46
+      guid: 
       position: {x: 7.607729, y: 0.0000014740157, z: 0}
       rotation: {x: 0, y: 0, z: 0.20495944, w: 0.9787705}
       length: 5.1832314
       parentId: 18
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_49
+      guid: 
       position: {x: 8.451194, y: 0.0000024262886, z: 0}
       rotation: {x: 0, y: 0, z: 0.138304, w: 0.9903898}
       length: 3.5263839
       parentId: 19
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_47
+      guid: 
       position: {x: 5.183231, y: -0.00000062771346, z: 0}
       rotation: {x: 0, y: 0, z: -0.16505875, w: 0.9862837}
       length: 8.504011
       parentId: 22
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_50
+      guid: 
       position: {x: 3.5263753, y: -0.0000068150657, z: 0}
       rotation: {x: 0, y: 0, z: -0.35126728, w: 0.93627524}
       length: 9.307731
       parentId: 23
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_48
+      guid: 
       position: {x: 8.504009, y: -0.0000012344778, z: 0}
       rotation: {x: 0, y: 0, z: -0.32855824, w: 0.9444837}
       length: 3.5404558
       parentId: 24
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_51
+      guid: 
       position: {x: 9.307729, y: 0.0000012226801, z: 0}
       rotation: {x: 0, y: 0, z: -0.2032488, w: 0.9791271}
       length: 3.1624832
       parentId: 25
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_52
+      guid: 
       position: {x: 3.162485, y: -0.0000029928035, z: 0}
       rotation: {x: 0, y: 0, z: -0.095877975, w: 0.9953931}
       length: 2.4853253
       parentId: 27
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteID: 2a5203a2b9019f34692e4313e1195e7c
     internalID: 0
     vertices:
@@ -5575,6 +5817,8 @@ TextureImporter:
       boneIndex[2]: 0
       boneIndex[3]: 0
     secondaryTextures: []
+    nameFileIdTable:
+      bone dog_0: 21300000
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
